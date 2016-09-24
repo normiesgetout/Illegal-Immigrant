@@ -1,0 +1,20 @@
+{
+  "name": "Illegal Immigrant",
+  "description": "/r/4chan is for plebs",
+  "version": "1.0",
+  "background": {"page": "background.html"},
+  "manifest_version": 2,
+  "browser_action": {
+    "icons": ["icon.png"],
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["ii.js"],
+      "matches": ["https://www.reddit.com/r/4chan/*", "http://www.reddit.com/r/4chan/*"]
+    }
+  ],
+  "permissions": [
+    "tabs", "https://www.reddit.com/r/4chan/*", "http://www.reddit.com/r/4chan/*"
+  ]
+}
