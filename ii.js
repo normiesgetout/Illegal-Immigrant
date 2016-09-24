@@ -11,6 +11,11 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
 }
 
 
-window.onload = function () {
-   document.getElementsByClassName("footer-parent").remove();
+function go (){
+	var chan = document.getElementsByClassName("footer-parent");
+	if(chan){
+		chan.remove();
+	}
 }
+
+go();
